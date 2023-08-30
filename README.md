@@ -4,15 +4,14 @@
 This repository provides a comprehensive implementation of authentication mechanisms using Python. It includes functionality for handling personal data, implementing basic authentication, session authentication, and a user authentication service. With these features, you can secure your web applications and ensure that only authorized users have access to sensitive information.
 
 ## Contents  
-1. Introduction  
-2. Authentication Mechanisms  
-   * Basic Authentication  
-   * Session Authentication  
-   * User Authentication Service  
-3. Getting Started  
-4. Usage  
-5. Contributing  
-6. License  
+1. [Introduction](https://github.com/Timmygee21/alx-backend-user-data#introduction)  
+2. [Authentication Mechanisms](https://github.com/Flesier/alx-backend-user-data#authentication-mechanisms)  
+   * [Basic Authentication](https://github.com/Flesier/alx-backend-user-data#basic-authentication)  
+   * [Session Authentication](https://github.com/Flesier/alx-backend-user-data#session-authentication)  
+   * [User Authentication Service](https://github.com/Flesier/alx-backend-user-data#user-authentication-service)  
+3. [Getting Started](https://github.com/Flesier/alx-backend-user-data#getting-started)  
+4. [Usage](https://github.com/Flesier/alx-backend-user-data#usage)  
+  
 
 ## Introduction  
 Authentication is a critical aspect of web application development. It ensures that users are who they claim to be and provides a secure environment to protect personal data. This repository offers a set of authentication mechanisms to help you implement user login, protect sensitive data, and manage user sessions effectively.
