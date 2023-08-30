@@ -1,27 +1,43 @@
 #!/usr/bin/env python3
 """
-User passwords should NEVER be stored
-in plain text in a database
+Password Encryption and Validation Module
 """
 import bcrypt
 
 
 def hash_password(password: str) -> bytes:
     """
-    Implement a hash_password function that expects one
-    string argument name password and returns a salted,
-    hashed password, which is a byte string
-    """
-    hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt())
-    return(hash)
+        Generates a salted and hashed password.
+
+        Args:
+                password (str): A string containing the plain text
+                password to be hashed.
+
+        Returns:
+                bytes: A byte string representing the salted, hashed password.
+        """
+    encoded = password.encode()
+    hashed = bcrypt.hashpw(encoded, bcrypt.gensalt())
+
+    return hashed
 
 
 def is_valid(hashed_password: bytes, password: str) -> bool:
     """
-    Use bcrypt to validate that the provided password
-    matches the hashed password
-    """
-    if bcrypt.checkpw(password.encode(), hashed_password):
-        return True
+        Validates whether the provided password matches the hashed password.
 
-    return False
+        Args:
+                hashed_password (bytes): A byte string representing
+                the salted, hashed password.
+                password (str): A string containing the plain text
+                password to be validated.
+
+        Returns:
+                bool: True if the provided password matches the hashed
+                password, False otherwise.
+        """
+    valid = False
+    encoded = password.encode()
+    if bcrypt.checkpw(encoded, hashed_password):
+        valid = True
+    return valid
