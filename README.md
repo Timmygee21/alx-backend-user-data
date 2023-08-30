@@ -6,9 +6,9 @@ This repository provides a comprehensive implementation of authentication mechan
 ## Contents  
 1. Introduction  
 2. Authentication Mechanisms  
-* Basic Authentication  
-* Session Authentication  
-* User Authentication Service  
+   * Basic Authentication  
+   * Session Authentication  
+   * User Authentication Service  
 3. Getting Started  
 4. Usage  
 5. Contributing  
